@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+  </head>
+  <body>
+  <header>
+    <nav>
+      <ul>
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Фото и видео</a></li>
+      <li><a href="index.html"><img src="#" width="138" height="70" alt="Логотип сайта Sedona"></a></li>
+      <li><a href="#">Карта штата</a></li>
+      <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <h1>Поиск жилья "Sedona"</h1>
+      <section>
+          <h2>Фильтр</h2>
+          <form method="get" action="#">
+              <fieldset>
+                  <legend>Инфраструктура:</legend>
+                  <ul>
+                    <li>
+                          <input type="checkbox" name="swimming-pool" id="filter-swimmimg-pool" checked>
+                          <label for="filter-swimmimg-pool">Бассейн</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="parking" id="filter-parking">
+                        <label for="filter-parking">Парковка</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                        <label for="filter-wi-fi">WI-FI</label>
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                        <label for="filter-hotel">Гостиница</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="motel" id="filter-motel" checked>
+                        <label for="filter-motel">Мотель</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                        <label for="filter-apartments">Апартаменты</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Стоимость в сутки (Р):</legend>
+                <input type="text" name="price" id="filter-price">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  </div>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+      </section>
+      <section>
+          <h2>Список отелей</h2>
+          <p>Найдено: 3</p>
+          <p>Сортировка:</p>
+            <ul>
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
+            <span>triangle up</span>
+            <span>triangle down</span>
+          <ul>
+            <li>
+                <h3>Amara resort & Spa</h3>
+                <img src="#" width="135" height="90" alt="Фото Amara resort & Spa"><br>
+                <span>Гостиница</span>
+                <span>От 4000 Р.</span><br>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+                <span class="star">Звезда1</span>
+                <span class="star">Звезда2</span>
+                <span class="star">Звезда3</span>
+                <span class="star">Звезда4</span>
+                <p>Рейтинг: <span>8,5</span></p>
+                
+            </li>
+            <li>
+                <h3>Desert quail inn</h3>
+                <img src="#" width="135" height="90" alt="Фото Amara resort & Spa"><br>
+                <span>Мотель</span>
+                <span>От 3000 Р.</span><br>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+                <span class="star">Звезда1</span>
+                <span class="star">Звезд2</span>
+                <span class="star">Звезда3</span>
+                <p>Рейтинг: <span>8,9</span></p>
+            </li>
+            <li>
+                <h3>Villas at poco diablo</h3>
+                <img src="#" width="135" height="90" alt="Фото Amara resort & Spa"><br>
+                <span>Апартаменты</span>
+                <span>От 2000 Р.</span><br>
+                <button type="button">Подробнее</button>
+                <button type="button">Забронировать</button>
+                <span class="star">Звезда1</span>
+                <span class="star">Звезд2</span>
+                <p>Рейтинг: <span>9,2</span></p>
+            </li>
+          </ul>
+        </section>
+ </main>
+ <section>
+    <h2>Связаться с нами</h2>
+    <ul>
+      <li>
+        <a href="#">Твиттер</a>
+      </li>
+      <li>
+        <a href="#">Фэйсбук</a>
+      </li>
+      <li>
+        <a href="#">Ютуб</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>Наш сайт</h2>
+    <p>Website by
+      <a href="https://htmlacademy.ru">html academy</a>
+    </p>
+  </section>
+
+</footer>
+
+</body>
+</html>
