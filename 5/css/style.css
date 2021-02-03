@@ -1,0 +1,288 @@
+/* Variables */
+
+:root {
+    --text-black: #000000;
+    --basic-white: #FFFFFF;
+    --basic-dark: #333333;
+    --special: #81B3D2;
+    --feature-item: #EEEEEE;
+    --search-form: #766357;
+    --button-focus: #669EC0;
+    --button-active: #5496BD;
+    --footer: rgba(255, 255, 255, 0.9);
+    --slider-shadow: #ABABAB;
+    --button-locked: #6A6A6A;
+    --up-down: #CACACA;
+    --book-button-focus: #604E43;
+    --book-button-active: #503E33;
+    --date: #F2F2F2;
+    --date-focus: #EBEBEB;
+    --date-border: #E5E5E5;
+    --plus-minus: #A9A9A9;
+    --logo-academy: #231F20;
+}
+
+/* Global */
+
+body {
+  min-width: ;
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: ;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--text-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--text-black);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-white)
+}
+
+/* Intro */
+
+.intro {
+
+}
+
+.intro h1 {
+
+}
+
+.sedona {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.pluses-list {
+  list-style: none;
+}
+
+.pluses-item {
+  text-align: center;
+}
+
+/* Search */
+
+.search {
+
+}
+
+.search h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.search-info {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.search-form {
+
+}
+
+.search-item {
+
+}
+
+.search-item input {
+  background-color: var(--date);
+}
+.search-item input:hover {
+  background-color: var(--date);
+}
+
+.search-item input:focus {
+  background-color: var(--date-focus);
+}
+
+.search-item input:active {
+  background-color: var(--basic-white);
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--special);
+}
+.button:focus {
+  background-color: var(--button-focus);
+}
+.button:active {
+  background-color: var(--button-active);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--text-black);
+}
+
+/* Footer */
+
+.main-footer {
+  color: var(--text-black);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts {
+
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+
+}
+
+.social-button {
+  background-color: var(--special);
+}
+
+.social-button:hover {
+  background-color: var(--special);
+}
+
+.social-button:focus {
+  background-color: var(--button-focus);
+}
+
+.social-button:active {
+  background-color: var(--button-active);
+}
+
+.footer-copyright {
+
+}
+
+.footer-copyright .button {
+  background-color: var(--text-black);
+}
+
+.footer-copyright .button:hover {
+  background-color: var(--text-black);
+}
+
+.footer-copyright .button:focus {
+  background-color: var(--special);
+}
+
+.footer-copyright .button:active {
+  background-color: var(--footer);
+}
+
+      /* Catalog */
+
+/*  Filter */
+
+.filter {
+
+}
+
+.infrastructure {
+  list-style: none;
+}
+
+/* Hotels */
+
+.hotels {
+
+}
+
+.selection {
+
+}
+
+.hotels-list {
+
+}
+
+.hotels-item {
+
+}
