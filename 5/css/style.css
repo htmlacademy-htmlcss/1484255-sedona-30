@@ -1,41 +1,41 @@
 /* Variables */
 
 :root {
-    --text-black: #000000;
-    --basic-white: #FFFFFF;
-    --basic-dark: #333333;
-    --special: #81B3D2;
-    --feature-item: #EEEEEE;
-    --search-form: #766357;
-    --button-focus: #669EC0;
-    --button-active: #5496BD;
-    --footer: rgba(255, 255, 255, 0.9);
-    --slider-shadow: #ABABAB;
-    --button-locked: #6A6A6A;
-    --up-down: #CACACA;
-    --book-button-focus: #604E43;
-    --book-button-active: #503E33;
-    --date: #F2F2F2;
-    --date-focus: #EBEBEB;
-    --date-border: #E5E5E5;
-    --plus-minus: #A9A9A9;
-    --logo-academy: #231F20;
+  --text-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-dark: #333333;
+  --special: #81B3D2;
+  --feature-item: #EEEEEE;
+  --search-form: #766357;
+  --button-hover: #669EC0;
+  --button-active: #5496BD;
+  --footer: rgba(255, 255, 255, 0.9);
+  --slider-shadow: #ABABAB;
+  --button-locked: #6A6A6A;
+  --up-down: #CACACA;
+  --book-button-focus: #604E43;
+  --book-button-active: #503E33;
+  --date: #F2F2F2;
+  --date-hover: #EBEBEB;
+  --date-focus: #E5E5E5;
+  --plus-minus: #A9A9A9;
+  --logo-academy: #231F20;
+  --line-left-right: #888888;
 }
 
 /* Global */
 
 body {
-  min-width: ;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--text-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: ;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -52,10 +52,8 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  font-size: 14px;
   line-height: 26px;
-  color: var(--text-black);
-  background-color: var(--basic-white);
+  font-weight: 700;
 }
 
 .site-navigation {
@@ -68,26 +66,31 @@ img {
 
 /* User navigation */
 
-.site-navigation a,
-.user-navigation a {
-  color: var(--basic-white);
+.info {
+  color: var(--text-black);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: var(--basic-white)
+.info:hover {
+  color: var(--special);
+}
+
+.info:focus {
+  background-color: var(--text-black);
+  opacity: 0.3;
+}
+
+.info:active {
+  background-color: var(--search-form);
 }
 
 /* Intro */
 
 .intro {
-
+  background-image: url("../img/mountains.jpg");
 }
 
 .intro h1 {
-
+  visibility:hidden;
 }
 
 .sedona {
@@ -97,12 +100,13 @@ img {
 }
 
 .reasons {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 26px;
 }
 
 /* Features */
+.features h2 {
+  visibility:hidden;
+}
 
 .features-list {
   list-style: none;
@@ -112,24 +116,55 @@ img {
   text-align: center;
 }
 
+.city-bridge {
+  color: var(--basic-white);
+  background-color: var(--special);
+}
+
 .feature-item h3 {
   font-size: 21px;
-  line-height: 21px;
   font-weight: 700;
+}
+
+.feature-item-background {
+  background-color: var(--feature-item);
 }
 
 .pluses-list {
   list-style: none;
+  color: var(--basic-dark);
+}
+
+.pluses-list h4 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .pluses-item {
   text-align: center;
+  list-style: none;
+}
+.pluses-item-house {
+  background-image: url("../img/house.svg");
+  background-repeat: no-repeat;
+}
+
+.pluses-item-burger {
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+}
+
+.pluses-item-gift {
+  background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
 }
 
 /* Search */
 
 .search {
-
+  background-image: url("../img/map.png");
+  text-align: center;
 }
 
 .search h2 {
@@ -139,32 +174,38 @@ img {
 }
 
 .search-info {
-  font-weight: 700;
-  font-size: 30px;
   line-height: 24px;
 }
 
-.search-form {
-
+.search-title {
+  color: var(--basic-white);
+  background-color: var(--search-form);
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
 }
 
-.search-item {
+.search-title:hover {
+  background-color: var(--book-button-focus);
+}
 
+.search-title:active {
+  background-color: var(--book-button-active);
 }
 
 .search-item input {
   background-color: var(--date);
+  color: var(--basic-dark);
+  line-height: 18px;
+  font-weight: 700;
+  border: none;
 }
 .search-item input:hover {
-  background-color: var(--date);
+  background-color: var(--date-hover);
 }
 
 .search-item input:focus {
   background-color: var(--date-focus);
-}
-
-.search-item input:active {
-  background-color: var(--basic-white);
 }
 
 /* Button */
@@ -175,18 +216,19 @@ img {
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-black);
+  background-color: var(--special);
   border: none;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .button:hover {
   background-color: var(--special);
 }
-.button:focus {
-  background-color: var(--button-focus);
-}
+
 .button:active {
   background-color: var(--button-active);
+  opacity: 0.3;
 }
 
 .button.disabled,
@@ -199,14 +241,20 @@ img {
 /* Footer */
 
 .main-footer {
-  color: var(--text-black);
-  background-color: var(--basic-white);
+  background-color: var(--footer);
   background-position: 0 0;
   background-repeat: repeat;
 }
 
-.footer-contacts {
+.main-footer h2 {
+  visibility: hidden;
+}
 
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--text-black);
 }
 
 .footer-social {
@@ -217,8 +265,19 @@ img {
   list-style: none;
 }
 
-.footer-social h2 {
+.twitter {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
 
+.fb {
+  background-image: url("../img/fb_icon.svg");
+  background-repeat: no-repeat;
+}
+
+.youtube {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
 }
 
 .social-button {
@@ -226,38 +285,32 @@ img {
 }
 
 .social-button:hover {
-  background-color: var(--special);
-}
-
-.social-button:focus {
-  background-color: var(--button-focus);
+  background-color: var(--button-hover);
 }
 
 .social-button:active {
   background-color: var(--button-active);
+  opacity: 0.3;
 }
 
 .footer-copyright {
-
+  background-image: url("../img/logo_htmlacademy.svg");
+  background-repeat: no-repeat;
 }
 
-.footer-copyright .button {
-  background-color: var(--text-black);
+.html-academy {
+  color: var(--text-black);
 }
 
-.footer-copyright .button:hover {
-  background-color: var(--text-black);
+.html-academy:hover {
+  color: var(--special);
 }
 
-.footer-copyright .button:focus {
-  background-color: var(--special);
+.html-academy:active {
+  color: var(----logo-academy);
 }
 
-.footer-copyright .button:active {
-  background-color: var(--footer);
-}
-
-      /* Catalog */
+/* Catalog */
 
 /*  Filter */
 
