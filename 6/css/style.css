@@ -90,8 +90,12 @@ img {
   background-image: url("../img/mountains.jpg");
 }
 
-h1 {
-  visibility:hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .sedona {
@@ -105,9 +109,6 @@ h1 {
 }
 
 /* Features */
-.features h2 {
-  visibility:hidden;
-}
 
 .features-list {
   list-style: none;
@@ -251,10 +252,6 @@ h1 {
   background-repeat: repeat;
 }
 
-.main-footer h2 {
-  visibility: hidden;
-}
-
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
@@ -301,10 +298,6 @@ h1 {
   opacity: 0.3;
 }
 
-.visually-hidden {
-  visibility: hidden;
-}
-
 .footer-copyright {
   background-color: var(--text-black);
   background-image: url("../img/logo_htmlacademy.svg");
@@ -332,10 +325,6 @@ h1 {
   background-image: url("../img/filter.jpg");
 }
 
-.filter h2 {
-  visibility: hidden;
-}
-
 .filter legend {
   font-weight: 700;
   font-size: 16px;
@@ -352,10 +341,6 @@ h1 {
 .submit:hover {
   background-color: var(--basic-white);
   color: var(--text-black);
-}
-
-.hotels h2 {
-  visibility: hidden;
 }
 
 .search-result {
