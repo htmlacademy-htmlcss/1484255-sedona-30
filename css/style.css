@@ -86,11 +86,16 @@ img {
 /* Intro */
 
 .intro {
+  background-color: var(--slider-shadow);
   background-image: url("../img/mountains.jpg");
 }
 
-.intro h1 {
-  visibility:hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .sedona {
@@ -104,9 +109,6 @@ img {
 }
 
 /* Features */
-.features h2 {
-  visibility:hidden;
-}
 
 .features-list {
   list-style: none;
@@ -146,16 +148,19 @@ img {
   list-style: none;
 }
 .pluses-item-house {
+  background-color: var(--basic-white);
   background-image: url("../img/house.svg");
   background-repeat: no-repeat;
 }
 
 .pluses-item-burger {
+  background-color: var(--basic-white);
   background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
 }
 
 .pluses-item-gift {
+  background-color: var(--basic-white);
   background-image: url("../img/gift.svg");
   background-repeat: no-repeat;
 }
@@ -163,6 +168,7 @@ img {
 /* Search */
 
 .search {
+  background-color: var(--feature-item) ;
   background-image: url("../img/map.png");
   text-align: center;
 }
@@ -246,10 +252,6 @@ img {
   background-repeat: repeat;
 }
 
-.main-footer h2 {
-  visibility: hidden;
-}
-
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
@@ -266,16 +268,19 @@ img {
 }
 
 .twitter {
+  background-color: var(--basic-white);
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
 }
 
 .fb {
+  background-color: var(--basic-white);
   background-image: url("../img/fb_icon.svg");
   background-repeat: no-repeat;
 }
 
 .youtube {
+  background-color: var(--basic-white);
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
 }
@@ -294,6 +299,7 @@ img {
 }
 
 .footer-copyright {
+  background-color: var(--text-black);
   background-image: url("../img/logo_htmlacademy.svg");
   background-repeat: no-repeat;
 }
@@ -315,27 +321,99 @@ img {
 /*  Filter */
 
 .filter {
+  color: var(--basic-white);
+  background-image: url("../img/filter.jpg");
+}
 
+.filter legend {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .infrastructure {
   list-style: none;
 }
 
-/* Hotels */
+.submit {
+  color: var(--basic-white);
+}
 
-.hotels {
+.submit:hover {
+  background-color: var(--basic-white);
+  color: var(--text-black);
+}
 
+.search-result {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .selection {
-
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: var(--special);
+  background-image: url("../img/cursor_up.svg");
+  background-image: url("../img/cursor_down.svg");
+  background-repeat: no-repeat;
 }
 
-.hotels-list {
-
+.selection-item {
+  opacity: 0.3;
 }
 
-.hotels-item {
+.selection-item:hover {
+  color: var(--special);
+}
 
+.hotels-item h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels-item h3:hover {
+  color: var(--special);
+}
+
+.hotels-item h3:active {
+  opacity: 0.3;
+}
+
+.details {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special);
+  border: none;
+}
+
+.details:hover {
+  background-color: var(--button-hover);
+}
+
+.details:active {
+  background-color: var(--button-active);
+}
+
+.book {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--search-form);
+  border: none;
+}
+
+.book:hover {
+  background-color: var(--book-button-focus);
+}
+
+.book:active {
+  background-color: var(--book-button-active);
+}
+
+.star {
+  background-color: var(--basic-white);
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 17px;
 }
