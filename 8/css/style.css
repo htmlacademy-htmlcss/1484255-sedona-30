@@ -1,0 +1,610 @@
+/* Variables */
+
+:root {
+  --text-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-dark: #333333;
+  --special: #81B3D2;
+  --feature-item: #EEEEEE;
+  --search-form: #766357;
+  --button-hover: #669EC0;
+  --button-active: #5496BD;
+  --footer: rgba(255, 255, 255, 0.9);
+  --slider-shadow: #ABABAB;
+  --button-locked: #6A6A6A;
+  --up-down: #CACACA;
+  --book-button-focus: #604E43;
+  --book-button-active: #503E33;
+  --date: #F2F2F2;
+  --date-hover: #EBEBEB;
+  --date-focus: #E5E5E5;
+  --plus-minus: #A9A9A9;
+  --logo-academy: #231F20;
+  --line-left-right: #888888;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
+  align-content: start;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+}
+
+/* Main navigation */
+
+.main-header {
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+}
+
+.main-navigation-wrapper .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+}
+
+.site-navigation {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  min-height: 56px;
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--text-black);
+}
+
+/* User navigation */
+
+.info {
+  color: var(--text-black);
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.info:hover {
+  color: var(--special);
+}
+
+.info:focus {
+  background-color: var(--text-black);
+  opacity: 0.3;
+}
+
+.info:active {
+  background-color: var(--search-form);
+}
+
+.photo {
+  color: var(--text-black);
+}
+
+.site-map {
+  color: var(--text-black);
+}
+
+.site-catalog {
+  color: var(--text-black);
+}
+
+/* Intro */
+
+.intro {
+  background-color: var(--slider-shadow);
+  background-image: url("../img/mountains.jpg");
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+
+}
+
+.sedona-reasons {
+  background-color: var(--basic-white);
+  width: 1200px;
+  height: 216px;
+}
+
+.sedona {
+  padding-top: 43px;
+  padding-bottom: 17px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons {
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 51px;
+}
+
+/* Features */
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.advantages {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+.city {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 256px;
+  color: var(--basic-white);
+  background-color: var(--special);
+}
+
+.real-city {
+  width: 300px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.city-picture {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.bridge {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 256px;
+  color: var(--basic-white);
+  background-color: var(--special);
+}
+
+.bridge-picture {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.devil-bridge {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.square {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.road {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.tourists {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.pluses-list {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr 1fr;
+  height: 332px;
+  list-style: none;
+  color: var(--basic-dark);
+}
+
+.pluses-list h4 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.pluses-item {
+  text-align: center;
+  list-style: none;
+
+}
+.pluses-item-house {
+  background-color: var(--basic-white);
+  background-image: url("../img/house.svg");
+  background-repeat: no-repeat;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 331px;
+}
+
+.pluses-item-burger {
+  background-color: var(--basic-white);
+  background-image: url("../img/burger.svg");
+  background-repeat: no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.pluses-item-gift {
+  background-color: var(--basic-white);
+  background-image: url("../img/gift.svg");
+  background-repeat: no-repeat;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Search */
+
+.search {
+  background-color: var(--feature-item) ;
+  background-image: url("../img/map.png");
+  text-align: center;
+}
+
+.search h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.search-info {
+  line-height: 24px;
+}
+
+.search-title {
+  color: var(--basic-white);
+  background-color: var(--search-form);
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.search-title:hover {
+  background-color: var(--book-button-focus);
+}
+
+.search-title:active {
+  background-color: var(--book-button-active);
+}
+
+.search-item input {
+  background-color: var(--date);
+  color: var(--basic-dark);
+  line-height: 18px;
+  font-weight: 700;
+  border: none;
+}
+.search-item input:hover {
+  background-color: var(--date-hover);
+}
+
+.search-item input:focus {
+  background-color: var(--date-focus);
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--special);
+  border: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: var(--special);
+}
+
+.button:active {
+  background-color: var(--button-active);
+  opacity: 0.3;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--text-black);
+}
+
+/* Footer */
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--footer);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--text-black);
+}
+
+.footer-social {
+  text-align: center;
+  justify-self: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.twitter {
+  background-color: var(--basic-white);
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.fb {
+  background-color: var(--basic-white);
+  background-image: url("../img/fb_icon.svg");
+  background-repeat: no-repeat;
+}
+
+.youtube {
+  background-color: var(--basic-white);
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button {
+  background-color: var(--special);
+}
+
+.social-button:hover {
+  background-color: var(--button-hover);
+}
+
+.social-button:active {
+  background-color: var(--button-active);
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  background-image: url("../img/logo_htmlacademy.svg");
+  background-repeat: no-repeat;
+}
+
+.html-academy {
+  color: var(--text-black);
+}
+
+.html-academy:hover {
+  color: var(--special);
+}
+
+.html-academy:active {
+  color: var(----logo-academy);
+}
+
+/* Catalog */
+
+/*  Filter */
+
+.filter {
+  color: var(--basic-white);
+  background-image: url("../img/filter.jpg");
+}
+
+.filter fieldset {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  padding: 0;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-right: 119px;
+  margin-left: 72px;
+}
+
+.filter fieldset:last-child {
+  margin-left: 348px;
+}
+
+.filter legend {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.infrastructure {
+  list-style: none;
+}
+
+.submit {
+  color: var(--basic-white);
+}
+
+.submit:hover {
+  background-color: var(--basic-white);
+  color: var(--text-black);
+}
+
+.search-result {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search-selection {
+  display: flex;
+  flex-direction: row;
+  height: 88px;
+}
+
+.selection {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  background-image: url("../img/cursor_up.svg");
+  background-image: url("../img/cursor_down.svg");
+  background-repeat: no-repeat;
+}
+
+.selection-item {
+  opacity: 0.3;
+}
+
+.selection-item:hover {
+  color: var(--special);
+}
+
+.hotels-item {
+  display: grid;
+  grid-template-columns: 135px 170px auto;
+  grid-column-gap: 30px;
+}
+
+.hotels-item h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotels-item h3:hover {
+  color: var(--special);
+}
+
+.hotels-item h3:active {
+  opacity: 0.3;
+}
+
+.amara-star {
+  justify-self: end;
+}
+
+.desert-inn-star {
+  justify-self: end;
+}
+
+.villas-star {
+  justify-self: end;
+}
+
+.details-book {
+  display: flex;
+}
+
+.details {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special);
+  border: none;
+}
+
+.details:hover {
+  background-color: var(--button-hover);
+}
+
+.details:active {
+  background-color: var(--button-active);
+}
+
+.book {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--search-form);
+  border: none;
+}
+
+.book:hover {
+  background-color: var(--book-button-focus);
+}
+
+.book:active {
+  background-color: var(--book-button-active);
+}
+
+.star {
+  background-color: var(--basic-white);
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 17px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
