@@ -170,16 +170,22 @@ img {
 }
 
 .sedona-reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--basic-white);
   height: 216px;
 }
 
 .sedona {
-  margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  width: 470px;
+  height: 80px;
+  margin-bottom: 16px;
 }
 
 .reasons {
@@ -213,6 +219,7 @@ img {
   height: 256px;
   color: var(--basic-white);
   background-color: var(--special);
+  margin-bottom: 60px;
 }
 
 .real-city {
@@ -234,12 +241,10 @@ img {
 .pluses-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 188px;
+  height: 270px;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  padding-top: 60px;
-  padding-bottom: 82px;
   color: var(--basic-dark);
 }
 
@@ -304,7 +309,7 @@ img {
 
 .bridge-picture {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-row: 1 / 2;
 }
 
 .devil-bridge {
@@ -421,10 +426,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: var(--text-black);
+}
+
+.footer-contacts p {
+  margin: 0;
 }
 
 .footer-social ul {
@@ -433,10 +443,12 @@ img {
 
 .footer-social {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .twitter {
-  background-color: var(--basic-white));
+  background-color: var(--basic-white);
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
 }
@@ -468,10 +480,12 @@ img {
 
 .footer-copyright {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-image: url("../img/logo_htmlacademy.svg");
+  background-color: var(--basic-white);
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .html-academy {
@@ -483,7 +497,7 @@ img {
 }
 
 .html-academy:active {
-  color: var(----logo-academy);
+  color: var(--logo-academy);
 }
 
 /* Catalog */
