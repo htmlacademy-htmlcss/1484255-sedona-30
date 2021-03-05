@@ -437,14 +437,12 @@ img {
   margin: 0;
 }
 
-.footer-social ul {
-  list-style: none;
-}
-
-.footer-social {
+.social-network {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .twitter {
@@ -466,7 +464,11 @@ img {
 }
 
 .social-button {
+  display: block;
+  width: 150px;
+  height: 43px;
   background-color: var(--special);
+  background-position: center;
 }
 
 .social-button:hover {
@@ -502,7 +504,7 @@ img {
 
 /* Catalog */
 
-/*  Filter */
+/* Filter */
 
 .filter {
   color: var(--basic-white);
@@ -548,6 +550,8 @@ form {
   color: var(--text-black);
 }
 
+/* Hotels */
+
 .search-result {
   font-weight: bold;
   font-size: 21px;
@@ -556,14 +560,17 @@ form {
 
 .search-selection {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   height: 88px;
 }
 
 .selection {
+  display: flex;
+  align-items: center;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
+  padding: 0;
   background-image: url("../img/cursor_up.svg");
   background-image: url("../img/cursor_down.svg");
   background-repeat: no-repeat;
@@ -597,7 +604,29 @@ form {
   opacity: 0.3;
 }
 
+.amara {
+  display: flex;
+  flex-direction: column;
+}
+
+.desert-inn {
+  display: flex;
+  flex-direction: column;
+}
+
+.villas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.details-book {
+  display: flex;
+}
+
 .amara-star {
+  display: flex;
+  justify-content: flex-end;
   justify-self: end;
 }
 
@@ -607,10 +636,6 @@ form {
 
 .villas-star {
   justify-self: end;
-}
-
-.details-book {
-  display: flex;
 }
 
 .details {
